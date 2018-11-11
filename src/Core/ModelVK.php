@@ -44,6 +44,7 @@ class ModelVK
     public function method($method, array $params = array())
     {
        $params['access_token']=$this->accessToken;
+        $params['v']=Config::get('vksettings.apiversion');
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_HEADER, 0);
         curl_setopt($curl, CURLOPT_VERBOSE, 0);

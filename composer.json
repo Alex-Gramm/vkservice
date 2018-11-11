@@ -1,10 +1,14 @@
 {
-  "name": "smskin/vkservice",
+  "name": "Alex-Gramm/vkservice",
   "description": "Laravel VK Components",
   "authors": [
     {
       "name": "Sergey Mikhaylov",
       "email": "serg@msoinvest.com"
+    },
+    {
+      "name": "Alex Gramm",
+      "email": "alex@gramm.org.ua"
     }
   ],
   "require": {

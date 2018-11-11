@@ -18,5 +18,6 @@ return [
                 'facebook'
             )
         ]
-    ]
+    ],
+    'apiversion' => "5.87"
 ];

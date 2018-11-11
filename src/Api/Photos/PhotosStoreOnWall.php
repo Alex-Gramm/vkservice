@@ -190,17 +190,17 @@ class PhotosStoreOnWall
             $imageNode = $response['response'][0];
             $result = new PhotosStoreOnWallResult();
             $result->result = true;
-            $result->pid = $imageNode['pid'];
-            $result->id = $imageNode['id'];
-            $result->aid = $imageNode['aid'];
-            $result->ownerId = $imageNode['owner_id'];
-            $result->src = $imageNode['src'];
-            $result->srcBig = $imageNode['src_big'];
-            $result->srcSmall = $imageNode['src_small'];
-            $result->width = $imageNode['width'];
-            $result->height = $imageNode['height'];
-            $result->text = $imageNode['text'];
-            $result->created = $imageNode['created'];
+            $result->pid = @$imageNode['pid'];
+            $result->id = @$imageNode['id'];
+            $result->aid = @$imageNode['aid'];
+            $result->ownerId = @$imageNode['owner_id'];
+            $result->src = @$imageNode['src'];
+            $result->srcBig = @$imageNode['src_big'];
+            $result->srcSmall = @$imageNode['src_small'];
+            $result->width = @$imageNode['width'];
+            $result->height = @$imageNode['height'];
+            $result->text = @$imageNode['text'];
+            $result->created = @$imageNode['created'];
             return $result;
         }
         new ApiException($response);
